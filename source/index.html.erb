@@ -1,0 +1,103 @@
+---
+title: Welcome to BBA Original Flowers
+---
+
+<!-- <div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper> -->
+		<!-- <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+			<div class="row">
+				<a href="" class="menu-link" id="-menu">
+					about
+				</a>
+			</div>
+			<div class="row">
+				<a href="" class="menu-link" id="-menu">
+					gallery
+				</a>
+			</div>
+			<div class="row">
+				<a href="" class="menu-link" id="-menu">
+					contact
+				</a>
+			</div>
+		</div> -->
+<div class="s-container">
+	<div class="row menu-row">
+		<a href="" class="menu-link" id="about-menu">
+			about
+		</a>
+	</div>
+	<div class="row menu-row">
+		<a href="" class="menu-link" id="gallery-menu">
+			gallery
+		</a>
+	</div>
+	<div class="row menu-row">
+		<a class="menu-link" id="contact-menu">
+			contact
+		</a>
+	</div>
+	<div class="row menu-row">
+		<a href="" class="menu-link" id="facebook-menu">
+			<i class="fi-social-facebook size-72"></i>
+		</a>
+	</div>
+	<div class="row menu-row">
+		<a href="" class="menu-link" id="instagram-menu">
+			<i class="fi-social-instagram size-72"></i>
+		</a>
+	</div>
+	<div class="row menu-row">
+		<a href="" class="menu-link" id="email-menu">
+			info@bbaoriginalflowers.com
+		</a>
+	</div>
+</div>
+<div class="p-container">
+	<div id="background-flower"></div>
+	<div id="background-flower-green"></div>
+	<div id="logo-container"></div>
+	<div class="expanded row" id="header-row">
+		<div id="header-logo-container" class="columns large-6 medium-6 small-6">
+			<a href="" id="logo-link">
+				<%= image_tag "flor_home_esq.png", id: "logo-bba" %>
+			</a>
+		</div>
+		<div class="columns large-6 medium-6 small-6">
+			<button type=button class="button c-hamburger c-hamburger--htx" data-open="offCanvasRight">
+		  	<span>toggle menu</span>
+		</button>
+		</div>
+	</div>
+	<div class="row" id="contact-form-container">
+		<h4 class="form-title">
+			Contact Us
+		</h4>
+		<% form_tag '', id: "contact-form" do %>
+			<% field_set_tag do %>
+				<div class="row form-field" id="name-container">
+					<div class="large-6 medium-6 columns field-container">
+						<%= text_field_tag :name, class: "contact-field", id: "name-field", placeholder: "Name" %>
+					</div>
+					<div class="large-6 medium-6 columns field-container" id="lastname-container">
+						<%= text_field_tag :name, class: "contact-field", id: "lastname-field", placeholder: "Last Name" %>
+					</div>
+				</div>
+				<div class="row form-field" id="phone-container">
+					<%= telephone_field_tag :number, class: "contact-field", id: "phone-field", placeholder: "Phone Number" %>
+				</div>
+				<div class="row form-field" id="email-container">
+					<%= email_field_tag :email, class: "contact-field", id: "email-field", placeholder: "Email" %>
+				</div>
+				<div class="row form-field" id="obs-container">
+					<%= text_area_tag :obs, class: "contact-field", id: "obs-field", placeholder: "How can we help you?", rows: 5%>
+				</div>
+			<% end %>
+			<% field_set_tag do%>
+				<%= submit_tag "Send", class: "button", id: "submit-form" %>
+			<% end %>
+		<% end %>
+	</div>
+</div>
+<!-- 	</div>
+</div> -->
