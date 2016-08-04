@@ -19,4 +19,5 @@ gem 'middleman-compass', '>= 4.0.0'
 gem 'jquery-middleman'
 gem 'middleman-sprockets'
 gem 'rack-contrib'
+gem 'puma'
 
