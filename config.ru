@@ -1,6 +1,8 @@
 require 'rack'
 require 'rack/contrib/try_static'
 
+'bundle exec middleman build'
+
 use Rack::TryStatic,
   root: 'build',
   urls: %w[/],
