@@ -20,4 +20,5 @@ gem 'jquery-middleman'
 gem 'middleman-sprockets'
 gem 'rack-contrib'
 gem 'puma'
+gem 'middleman-dato'
 

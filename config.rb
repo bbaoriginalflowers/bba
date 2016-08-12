@@ -24,6 +24,11 @@ configure :development do
   activate :livereload
 end
 
+activate :dato,
+  token: 'f272874613a76b204dff8ef94a2bd31cdad7ba71c32de453c5',
+  base_url: 'http://bbaoriginalflowers.herokuapp.com'
+  
+
 ###
 # Helpers
 ###
